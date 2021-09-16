@@ -227,16 +227,3 @@ func shouldRetryRequest(err error) bool {
 	}
 	return false
 }
-
-// func canTryInsecure() bool {
-// 	if !isatty.IsTerminal(os.Stdout.Fd()) {
-// 		return false
-// 	}
-// 	prompt := promptui.Prompt{
-// 		Label:     "Connection appears to be insecure. Would you like to attempt to create a support bundle anyway?",
-// 		IsConfirm: true,
-// 	}
-
-// 	_, err := prompt.Run()
-// 	return err == nil
-// }
