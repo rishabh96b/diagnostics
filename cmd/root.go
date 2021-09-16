@@ -14,7 +14,7 @@ import (
 
 func RootCmd() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "support-bundle [url]",
+		Use:   "diagnostics [url]",
 		Args:  cobra.MinimumNArgs(1),
 		Short: "Generate a support bundle",
 		Long: `A support bundle is an archive of files, output, metrics and state
